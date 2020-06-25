@@ -25,7 +25,6 @@ var getRepoIssues = function (repo) {
     //fetch the urls and list in reverse order
     var apiUrl = "https://api.github.com/repos/" + repo + "/issues?direction=asc";
 
-
     // make a get request to url
     fetch(apiUrl).then(function (response) {
         // request was successful
